@@ -14,6 +14,9 @@ export class UsuarioController{
         return {dadosDoUsuario};
     }
 
-
+    @Get()
+    async pegaUsers(){
+        return this.usuarioRepository.getUsers();
+    }
 
 }
